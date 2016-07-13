@@ -34,18 +34,18 @@ python-pip", then "pip install pykml".
 
 Just add:
 
-    A decent antenna for the SDR (~162 MHz)
+A decent antenna for the SDR (~162 MHz)
 
 KML export: 
 
-    Often, it's helpful to be able to plot the vessels observed on your trip on
+Often, it's helpful to be able to plot the vessels observed on your trip on
 Google Earth/Maps.  You can do this by using the -k flag. Because a time stamp
 is included, it is extra important that your system time be correct if using
 this option.
 
 Final remarks (really, I'll shut up after this):
 
-    It's not bulletproof; this is a quick proof-of-concept/demo that involved
+It's not bulletproof; this is a quick proof-of-concept/demo that involved
 just a couple hours of total work. Of note, there is some repetitiveness of
 alerts, especially if verbosity is enabled. I recommend only triggering on
 either the name or MMSI to avoid this in non-verbose mode, and of the two, MMSI
@@ -57,6 +57,6 @@ off the ground to begin with, send me a message
 
 Reminder:
 
-    You ***MUST*** determine your PPM value! UTC time will be used for KML, but
-it depends on the system time, so it you ***MUST*** ensure that it is accurate
+You must determine your PPM value! UTC time will be used for KML, but
+it depends on the system time, so it you must ensure that it is accurate
 if exporting to KML!
