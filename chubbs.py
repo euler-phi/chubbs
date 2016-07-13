@@ -24,13 +24,14 @@ list of 100s of vessel names and MMSIs into the shell.
 
 Dependencies: 
 
-    rtl-sdr --  Install with "sudo apt-get install rtl-sdr". You ***MUST*** (read:
-    not optional) determine your specific SDR's PPM error, or this (and any
-    other) SDR application will not work properly. The standard method for doing
-    this is to run "rtl_test -p" for several minutes until your cumulative PPM
-    value converges. This is the value you will use with the -e flag when
-    running chubbs. The PPM value for an SDR is unlikely to change over time,
-    but will be different from dongle to dongle.
+    rtl-sdr and librtlsdr-dev --  Install with "sudo apt-get install rtl-sdr
+    librtlsdr-dev". You ***MUST*** (read: not optional) determine your specific
+    SDR's PPM error, or this (and any other) SDR application will not work
+    properly. The standard method for doing this is to run "rtl_test -p" for
+    several minutes until your cumulative PPM value converges. This is the value
+    you will use with the -e flag when running chubbs. The PPM value for an SDR
+    is unlikely to change over time, but will be different from dongle to
+    dongle.
 
     aisdeco - available here: http://xdeco.org/?page_id=30
     (I'm doing this on an RPi 3, so I used an older version specifically for the
@@ -49,11 +50,6 @@ Dependencies:
     "pip install pykml"
     If you don't, then we'll need to first install pip with
     "sudo apt-get install python-pip", then "pip install pykml".
-
-    All standard SDR libraries are required (libsdrdev or something to that
-    effect, probably), as well as cmake/automake (if I'm remember the build
-    process properly) to build and install aisdeco. Reasonable documentation
-    exists, at least in message board form, for both of these programs.
 
 Just add:
     A decent antenna for the SDR (~162 MHz)
