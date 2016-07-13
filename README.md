@@ -34,7 +34,9 @@ python-pip", then "pip install pykml".
 
 Just add:
 
-A decent antenna for the SDR (~162 MHz)
+A decent antenna for the SDR. AIS is transmitted on the VHF channels 87B and 88B
+(upper side of the duplex), at frequencies 161.975 MHz ("Channel A") and 162.025
+("Channel B").
 
 KML export: 
 
