@@ -1,11 +1,13 @@
 # chubbs
 
 Description:
+
 A simple wrapper around aisdeco and libais, AIS decoding programs,
 that has the useful benefit of being able to *alert* you to particular vessels
 of interest based on their MMSI or vessel name. 
 
 Updated: 12 July 2016
+
 Changelog: -k flag added for KML export. -fn and -fm flags added for passing
 newline-separated vessel names and MMSIs, respectively, rather than typing a
 list of 100s of vessel names and MMSIs into the shell.
