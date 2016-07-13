@@ -1,12 +1,22 @@
 # chubbs
 
+Description:
+A simple wrapper around aisdeco and libais, AIS decoding programs,
+that has the useful benefit of being able to *alert* you to particular vessels
+of interest based on their MMSI or vessel name. 
+
+Updated: 12 July 2016
+Changelog: -k flag added for KML export. -fn and -fm flags added for passing
+newline-separated vessel names and MMSIs, respectively, rather than typing a
+list of 100s of vessel names and MMSIs into the shell.
+
 Dependencies: 
 
     rtl-sdr and librtlsdr-dev
-Install with "sudo apt-get install rtl-sdr librtlsdr-dev". You ***MUST*** (read:
-not optional) determine your specific SDR's PPM error, or this (and any other)
-SDR application will not work properly. The standard method for doing this is to
-run "rtl_test -p" for several minutes until your cumulative PPM value converges.
+Install with "sudo apt-get install rtl-sdr librtlsdr-dev". You must (read: not
+optional) determine your specific SDR's PPM error, or this (and any other) SDR
+application will not work properly. The standard method for doing this is to run
+"rtl_test -p" for several minutes until your cumulative PPM value converges.
 This is the value you will use with the -e flag when running chubbs.  The PPM
 value for an SDR is unlikely to change over time, but will be different from
 dongle to dongle. 
