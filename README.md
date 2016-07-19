@@ -48,7 +48,7 @@ Just add:
 
 A decent antenna for the SDR. AIS is transmitted on the VHF channels 87B and 88B
 (upper side of the duplex), at frequencies 161.975 MHz ("Channel A") and 162.025
-("Channel B").
+MHz ("Channel B").
 
 KML export: 
 
@@ -63,7 +63,7 @@ It's not bulletproof; this is a quick proof-of-concept/demo that involved
 just a couple hours of total work. Of note, there is some repetitiveness of
 alerts, especially if verbosity is enabled. I recommend only triggering on
 either the name or MMSI to avoid this in non-verbose mode, and of the two, MMSI
-is probably the better method.  I've noticed a weird @ sign appended onto the
+is probably the better method.  I've noticed an odd @ sign appended onto the
 name of a buoy in Guam after like a dozen spaces, which was weird, and makes me
 feel like MMSI is the more industrial grade method. Plus, let's face it, a lot
 of ships have hard names to spell. When it breaks on you, or if you can't get it
