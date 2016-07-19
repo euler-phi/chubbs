@@ -11,7 +11,7 @@ import os
 
 '''
 Program: chubbs.py
-Author: Erik Rye (rye@usna.edu)
+Author: Erik Rye 
 Date: 5 July 2016
 Description: A simple wrapper around aisdeco and libais, AIS decoding programs,
 that has the useful benefit of being able to *alert* you to particular vessels
