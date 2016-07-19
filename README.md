@@ -74,3 +74,25 @@ Reminder:
 You must determine your PPM value! UTC time will be used for KML, but
 it depends on the system time, so it you must ensure that it is accurate
 if exporting to KML!
+
+Examples:
+
+1 -- start chubbs with MMSIs 1234 and 2345, and the name "Titanic" as alerts.
+Assume the SDR has a PPM error of 5.
+  
+  python chubbs.py -m 1234 2345 -n Titanic -e 5
+
+
+2 -- start chubbs with MMSIs 1234 and 2345, and the name "Titanic" as alerts.
+In addition, turn on verbosity (shows all NMEA messages, not just alerts) and KML logging.
+Assume the SDR has a PPM error of 5.
+
+  python chubbs.py -m 1234 2345 -n Titanic -e 5 -v -k
+
+
+3 -- start chubbs, reading alerts from the files mmsis.txt and names.txt, that
+contain MMSIs and names of vessels, respectively. In addition, turn on
+verbosity (shows all NMEA messages, not just alerts) and KML logging.  Assume
+the SDR has a PPM error of 5.
+
+  python chubbs.py -fm mmsis.txt -fn names.txt -e 5 -v -k
